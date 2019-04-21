@@ -19,19 +19,7 @@ body {
     nav h1 {
         margin-left: 5px;
     }
-    nav ul {
-        display: flex;
-        position: absolute; 
-        right: 5px;
-        align-items: center;
-        padding: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    nav ul li {
-        list-style-type: none;
-        margin-left: 10px;
-    }
+   
     .hero-container {
         width: 100%;
         height: 100%; 
@@ -52,7 +40,7 @@ body {
     }
     .project {
         height: 250px;
-        width: 80%px;
+        width: 80%;
         border: 1px solid black;
         background-color: rgb(224, 224, 224);
         margin-left: auto;
@@ -106,33 +94,123 @@ body {
         text-align: center;
         font-size: 120%;
     }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 601px){
+    .hide {
+        display: none;
+    }
     nav {
         height: 100%;
         width: 25%;
         position: fixed;
         left: 0;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav h1 {
+        position: absolute;
+        top: 50px;
+    }
+    li {
+        list-style-type: none;
+    }
+    .nav-links {
+        
+        flex-direction: column;
+        
+        border: 1px solid black;
+    }
+    .project-links {
+        flex-direction: column;
+        padding: 0;
+    }
+    .quiz-app:hover {
+        cursor: pointer;
     }
     body {
         position: fixed;
         right: 0;
         width: 75%;
     }
-    .one, .languages, .links, .description-one p, .footer{
-        display: none;
+    .project {
+        width: 65%;
+    }
+    .one {
+        background: url("https://i.imgur.com/dRgRaR1.png");
+        background-size: cover;
     }
     .bio {
         margin-top: 0;
     }
     .hero-container {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px; 
+    }
+    .links a {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .languages {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .bio-large {
+        display: block;
+    }
+    .bio-small {
+        display: none;
     }
 }
 @media screen and (max-width: 600px) {
+    .hide {
+        display: block;
+    }
+    .footer {
+        display: block;
+    }
+    .large {
+        display: none;
+    }
+    .project-links {
+        display: none;
+    }
+    .bio-large {
+        display: none;
+    }
+    .bio-small {
+        display: block;wqe
+    }
+    .nav-links {
+        display: flex;
+        position: absolute; 
+        right: 5px;
+        align-items: center;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .nav-links li {
+        list-style-type: none;
+        margin-left: 10px;
+    }
     .bio {
         width: 100%;
+        display: block;
     }
     .bio p {
         text-align: center;
