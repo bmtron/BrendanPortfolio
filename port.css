@@ -132,14 +132,20 @@ body {
         margin-right: auto;
         width: 65%;
         display: flex;
+        justify-content: center;
         margin-top: 10px; 
     }
     .links a {
         margin-left: 10px;
         margin-right: 10px;
         text-decoration: none;
-        position: relative;
-        left: 50px;
     }
-    
+    .languages {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
 }
