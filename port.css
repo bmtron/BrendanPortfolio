@@ -132,27 +132,14 @@ body {
         margin-right: auto;
         width: 65%;
         display: flex;
-        margin-top: 10px;
-        justify-content: center;
+        margin-top: 10px; 
     }
     .links a {
         margin-left: 10px;
         margin-right: 10px;
         text-decoration: none;
+        position: relative;
+        left: 50px;
     }
-    .html-logo, .css-logo, .js-logo, .jq-logo {
-        position: absolute;
-    }
-    .html-logo {
-        left: 101px;
-    }
-    .css-logo {
-        left: 126px;    
-    }
-    .js-logo {
-        left: 151px;
-    }
-    .jq-logo {
-        left: 176px;
-    }
+    
 }
