@@ -2,98 +2,115 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+html, body {
+    height: 100%;
+}
+nav {
+    border: 1px solid black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(173, 173, 173);
+    align-items: center;
+}
+nav h1 {
+    margin-left: 5px;
+}
 
-    nav {
-        border: 1px solid black;
+.bio {
+    width: 80%px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+.bio h2 {
+    margin: 0;
+    text-align: center;
+    top: 123px;
+}
+.project {
+    height: 250px;
+    width: 80%px;
+    border: 1px solid black;
+    background-color: rgb(224, 224, 224);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.project h2 {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 97px;
+}
+.html-logo {
+    width: 20px;
+    height: 20px;
+    background: url("http://www.stickpng.com/assets/images/5847f5c3cef1014c0b5e489d.png");
+    background-size: cover;
+}
+.css-logo {
+    background: url("https://sitejerk.com/images/background-attachment-3.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.js-logo {
+    background: url("https://cdn.freebiesupply.com/logos/large/2x/javascript-logo-png-transparent.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.jq-logo {
+    background: url("http://pluspng.com/img-png/jquery-logo-png--512.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.one, .two, .three, .four {
+    margin-top: 0;
+    
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    background-color: rgb(131, 129, 129); 
+}
+.footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 120%;
+}
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
         display: flex;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: rgba(173, 173, 173);
-        align-items: center;
+        justify-content: center;
+        margin-top: 10px; 
     }
-    nav h1 {
-        margin-left: 5px;
+    .links a {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
     }
-   
-    .hero-container {
-        width: 100%;
-        height: 100%; 
-    }
-    .bio {
-        width: 80%px;
+    .languages {
+        width: 65%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 120px;
-        padding: 15px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
     }
-    .bio h2 {
-        
-        margin: 0;
-        text-align: center;
-        top: 123px;
-    }
-    .project {
-        height: 250px;
-        width: 80%px;
-        border: 1px solid black;
-        background-color: rgb(224, 224, 224);
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-    }
-    .two, .three, .four {
-        display: none;
-    }
-    .project h2 {
-        margin: 0;
-        text-align: center;
-        position: relative;
-        top: 97px;
-    }
-    .html-logo {
-        width: 20px;
-        height: 20px;
-        background: url("http://www.stickpng.com/assets/images/5847f5c3cef1014c0b5e489d.png");
-        background-size: cover;
-    }
-    .css-logo {
-        background: url("https://sitejerk.com/images/background-attachment-3.png");
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-    }
-    .js-logo {
-        background: url("https://cdn.freebiesupply.com/logos/large/2x/javascript-logo-png-transparent.png");
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-    }
-    .jq-logo {
-        background: url("http://pluspng.com/img-png/jquery-logo-png--512.png");
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-    }
-    .two, .three, .four {
-        margin-top: 0;
-    }
-    .footer {
-        width: 100%;
-        height: 50px;
-        margin: 0;
-        background-color: rgb(131, 129, 129); 
-    }
-    .footer p {
-        margin: 0;
-        text-align: center;
-        font-size: 120%;
-    }
-@media screen and (min-width: 751px) {
+
+@media screen and (min-width: 1000px) {
     
     nav {
         height: 100%;
-        width: 25%;
+        width: 20%;
         position: fixed;
         left: 0;
         flex-direction: column;
@@ -111,11 +128,15 @@
         display: none;
     }
     .nav-links {
-        position: absolute;
-        top: 100px;
-        flex-direction: column;
-        border: 1px solid black;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        top: -500px;
         padding: 0;
+    }
+    .nav-links li {
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .project-links {
         flex-direction: column;
@@ -132,6 +153,7 @@
         right: 0;
         width: 75%;
         height: 100%;
+        padding: 0;
     }
     .small {
         display: none;
@@ -149,22 +171,33 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        right: 0;
+        margin: 0;
+        height: 100%;
     }
     .bio p {
         text-align: center;
     }
     .project {
         width: 65%;
-        height: 30%;
+        height: 600px;
+        display: none;
     }
     .one {
         background: url("https://i.imgur.com/dRgRaR1.png");
         background-size: cover;
     }
+    .description-one {
+        display: none;
+    }
     .description-one p {
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .description-two {
+        display: none;
     }
     .links {
         margin-left: auto;
@@ -188,21 +221,45 @@
         justify-content: center;
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 999px) {
     body {
         margin: 0;
+        overflow: auto;
     }
     .bio {
         width: 100%;
-    }
-    .large {
-        display: none;
-    }
-    .small {
-        display: block;
+        height: 376px;
     }
     .bio p {
         text-align: center;
+    }
+    .large {
+     display: none;
+    }
+    .small {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -70px;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        width: 65%;
+        justify-content: center;
+    }
+    .small li {
+        list-style-type: none;
+        margin: 5px;
+    }
+    .small li:hover {
+        cursor: pointer;
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 80px;
+        height: 100%;
     }
     .project {
         width: 65%;
@@ -210,6 +267,17 @@
     .one {
         background: url("https://i.imgur.com/dRgRaR1.png");
         background-size: cover;
+        display: none;
+    }
+    .js-description {
+        height: 126px;
+        display: none;
+    }
+    .two, .three, .four {
+        display: none;
+    }
+    .description-one {
+        display: none;
     }
     .description-one p {
         text-align: center;
@@ -224,35 +292,13 @@
         padding: 0;
         margin-top: 0;
         margin-bottom: 0;
-
     }
     .nav-links li {
         list-style-type: none;
         margin-left: 10px;
     }
-    .links {
-        margin-left: auto;
-        margin-right: auto;
-        width: 65%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px; 
-    }
-    .links a {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-decoration: none;
-    }
-    .languages {
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
     .footer {
-        position: relative;
+        position: absolute;
         bottom: 0;
     }
 }

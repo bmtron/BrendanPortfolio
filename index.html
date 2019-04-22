@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Brendan Meehan's personal web development portfolio. Come and see what I've made!">
         <link href="port.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css"/>
         <title>Brendan Meehan's Web Development Portfolio</title>
     </head>
     <body>
@@ -19,32 +20,28 @@
                 <ul class="project-links large">
                     <li class="me js-p-link">About Me</li>
                     <li class="quiz js-p-link">Monty Python Quiz App</li>
+                    <li class="upcoming-one js-p-link">Coming Soon!</li>
                 </ul>
             </nav>
         </header>
         <section class="hero-container">
-            <section class="bio small">
+            <ul class="project-links small">
+                <li class="me js-p-link">About Me</li>
+                <li class="quiz js-p-link">Monty Python Quiz App</li>
+                <li class="upcoming-one js-p-link">Coming Soon!</li>
+            </ul>
+            <section class="bio">
                 <h2>Hello, my name is Brendan, and I am a full-stack web developer with a flair for functionality.
                 </h2>
-                <p>I am currently a student at Thinkful's Full Stack web development program. Ever since       I built my first computer, I have had a growing 
+                <p>I am currently a student at Thinkful's Full Stack web development program. Ever since I built my first computer, I have had a growing 
                     passion for technology in all its facets, but more specifically with learning how software functions. Solving unique problems in creative 
                     ways is what drives me, and the more I explored programming and software development, the more I fell in love with it. The process of 
                     turning an idea into code, and watching that code become a useful, hands on solution never ceases to excite me. Through building 
                     a multitude of well structured, reusable functions and crafting user friendly, accessible UI, I have taken my passion and put it to use,
                     solving problems one web page at a time.</p>
             </section>
-            <section class="bio large bigbio">
-                <h2>Hello, my name is Brendan, and I am a full-stack web developer with a flair for functionality.
-                </h2>
-                <p>I am currently a student at Thinkful's Full Stack web development program. Ever since       I built my first computer, I have had a growing 
-                    passion for technology in all its facets, but more specifically with learning how software functions. Solving unique problems in creative 
-                    ways is what drives me, and the more I explored programming and software development, the more I fell in love with it. The process of 
-                    turning an idea into code, and watching that code become a useful, hands on solution never ceases to excite me. Through building 
-                    a multitude of well structured, reusable functions and crafting user friendly, accessible UI, I have taken my passion and put it to use,
-                    solving problems one web page at a time.</p>
-            </section>
-            <section class="project one small"></section>
-            <section class="description-one small">
+            <section class="project one js-project"></section>
+            <section class="description-one js-description">
                 <section class="languages">
                         <div class="html-logo"></div>
                         <div class="css-logo"></div>
@@ -52,14 +49,15 @@
                         <div class="jq-logo"></div>
                 </section>
                 <section class="links quiz">
-                <a href="https://bmtron.github.io/QuizApp" target="_blank">Live</a>
-                <a href="https://github.com/bmtron/QuizApp" target="_blank">Repo</a>
+                    <a href="https://bmtron.github.io/QuizApp" target="_blank">Live</a>
+                    <a href="https://github.com/bmtron/QuizApp" target="_blank">Repo</a>
                 </section>
                 <p>This nifty quiz app utilizes HTML, CSS, JavaScript, and JQuery to test your knowledge of the world's funniest, most eccentric comedy troupe,
                 Monty Python!
                 </p>
             </section>
-            <section class="project two"><h2>Project 2</h2></section>
+            <section class="project two js-project"><h2>Project 2</h2></section>
+            <section class="description-two js-description"><p>Coming Soon!</p></section>
             <section class="project three"><h2>Project 3</h2></section>
             <section class="project four"><h2>Project 4</h2></section>
             <footer class="footer"><p>Footer</p></footer>
