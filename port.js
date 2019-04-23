@@ -2,25 +2,37 @@
 
 function handleQuizClick() {
     $('.project-links').on('click', '.js-p-link', event => {
-
+        if ($('.one').is(":visible")) {
+            jQuery.noop();
+        }
+        else {
         let currentSelection = $(event.currentTarget);
         checkForQuiz(currentSelection);
+        }
     });
 }
 
 function handleBioClick() {
     $('.project-links').on('click', '.js-p-link', event => {
-
+        if ($('.bio').is(":visible")) {
+            jQuery.noop();
+        }
+        else {
         let currentSelection = $(event.currentTarget);
         checkForBio(currentSelection);
+        }
     });
 }
 function handleUpcomingClick() {
     $('.project-links').on('click', '.js-p-link', event => {
-
+        if ($('.two').is(":visible")){
+            jQuery.noop();
+        }
+        else {
         let currentSelection = $(event.currentTarget);
         checkForUpcoming(currentSelection);
         console.log('clicked');
+        }
     });
 }
 function checkForBio(input) {
