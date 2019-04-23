@@ -227,15 +227,17 @@ nav h1 {
         font-size: 3.5vw;
     }
     header {
+        position: fixed;
+        top: 0;
         height: 10%;
     }
     nav {
+        position: fixed;
+        top: 0;
         background: none;
         border: none;
     }
     .bio {
-        position: relative;
-        top: 25%;
         width: 100%;
     }
     .one, .description-one, .two, .description-two {
@@ -268,6 +270,8 @@ nav h1 {
         cursor: pointer;
     }
     .hero-container {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         top: 80px;
         height: 90%;
@@ -313,7 +317,6 @@ nav h1 {
         margin-left: 10px;
     }
     .footer {
-        position: fixed;
-        bottom: 0;
+        display: none;
     }
 }
