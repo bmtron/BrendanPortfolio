@@ -240,7 +240,7 @@ nav h1 {
     .bio {
         width: 100%;
     }
-    .one, .description-one, .two, .description-two {
+    .one, .description-one, .two, .description-two, .bio {
         position: relative;
         top: 100px;
     }
