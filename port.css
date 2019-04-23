@@ -373,12 +373,13 @@ nav h1 {
     }
     .bio {
         width: 100%;
-        position: relative;
-        top: 140px;
+        position: absolute;
+        top: 190px;
     }
     .project-container {
-        position: relative;
-        top: -100px;
+        position: absolute;
+        top: 190px;
+        width: 100%;
     }
     .one, .description-one, .two, .description-two {
         position: relative;
