@@ -248,7 +248,7 @@ nav h1 {
         justify-content: center;
     }
 }
-@media screen and (max-width: 975px) and (min-width: 460px) {
+@media screen and (max-width: 975px) and (min-width: 571px) {
     body {
         margin: 0;
         height: 100%;
@@ -269,8 +269,10 @@ nav h1 {
     }
     .bio {
         width: 100%;
+        position: absolute;
+        top: 190px;
     }
-    .one, .description-one, .two, .description-two, .bio {
+    .one, .description-one, .two, .description-two {
         position: relative;
         top: 100px;
     }
@@ -300,6 +302,11 @@ nav h1 {
     }
     .small li:hover {
         cursor: pointer;
+    }
+    .project-container {
+        position: absolute;
+        top: 190px;
+        width: 100%;
     }
     .hero-container {
         display: flex;
@@ -352,7 +359,7 @@ nav h1 {
         display: none;
     }
 }
-@media screen and (max-width: 459px) {
+@media screen and (max-width: 570px) {
     h1 {
         font-size: 5.8vw;
     }
