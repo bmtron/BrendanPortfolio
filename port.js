@@ -31,14 +31,13 @@ function handleUpcomingClick() {
         else {
         let currentSelection = $(event.currentTarget);
         checkForUpcoming(currentSelection);
-        console.log('clicked');
+        
         }
     });
 }
 function checkForBio(input) {
     if (input.hasClass('me')) {
-        $('.js-description').hide();
-        $('.js-project').hide();
+        $('.project-container').hide();
         $('.bio').fadeIn();
     }
     else {
@@ -48,6 +47,7 @@ function checkForBio(input) {
 function checkForQuiz(input) {
     if (input.hasClass('quiz')) {
         $('.bio').hide();
+        $('.project-container').fadeIn();
         $('.js-project').hide();
         $('.js-description').hide();
         $('.one').fadeIn();
@@ -60,6 +60,7 @@ function checkForQuiz(input) {
 function checkForUpcoming(input) {
     if (input.hasClass('upcoming-one')) {
         $('.bio').hide();
+        $('.project-container').fadeIn();
         $('.js-project').hide();
         $('.js-description').hide();
         $('.description-two').fadeIn();
