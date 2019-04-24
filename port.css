@@ -51,6 +51,7 @@ nav h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    border-bottom: 2px solid #00001E;
 }
 
 .project h2 {
@@ -97,31 +98,36 @@ nav h1 {
     text-align: center;
     font-size: 120%;
 }
-    .links {
-        margin-left: auto;
-        margin-right: auto;
-        width: 65%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px; 
-    }
-    .links a {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-decoration: none;
-        color: #00000F;
-    }
-    .links a:visited {
-        color: #00000F;
-    }
-    .languages {
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+    border-bottom: 1px solid #00001E;
+}
+.links a {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #00000F;
+}
+.links a:visited {
+    color: #00000F;
+}
+.languages {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.project-container {
+    border: 2px solid #00001E;
+    background-color: #dfe6e9;
+    border-radius: 3px;
+}
+
 
 @media screen and (min-width: 976px) {
     header {
@@ -190,7 +196,6 @@ nav h1 {
     .project-container {
         display: none;
         width: 750px;
-        
     }
     .hero-container {
         display: flex;
@@ -235,12 +240,13 @@ nav h1 {
         text-align: center;
     }
     .links {
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        width: 65%;
         display: flex;
         justify-content: center;
         margin-top: 10px; 
+        margin-bottom: 10px;
     }
     .links a {
         margin-left: 10px;
@@ -248,9 +254,7 @@ nav h1 {
         text-decoration: none;
     }
     .languages {
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
         margin-top: 10px;
         display: flex;
         justify-content: center;
@@ -280,10 +284,7 @@ nav h1 {
         position: absolute;
         top: 190px;
     }
-    .one, .description-one, .two, .description-two {
-        position: relative;
-        top: 100px;
-    }
+   
     .bio p {
         text-align: left;
         font-size: 16px;
@@ -304,7 +305,6 @@ nav h1 {
         display: flex;
         padding: 0;
         justify-content: center;
-        
     }
     .small li {
         background-color: #00001E;
@@ -317,9 +317,13 @@ nav h1 {
         cursor: pointer;
     }
     .project-container {
-        position: absolute;
-        top: 190px;
-        width: 100%;
+        position: relative;
+        top: 100px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background: none;
+        border: none;
     }
     .hero-container {
         display: flex;
@@ -329,7 +333,11 @@ nav h1 {
         height: 90%;
     }
     .project {
-        width: 65%;
+        width: 100%;
+        border: 2px solid #00001E;
+    }
+    .links {
+        border: none;
     }
     .one, .two, .three, .four {
         height: 60vw;
@@ -353,6 +361,9 @@ nav h1 {
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .nav-links {
         display: flex;
@@ -396,12 +407,17 @@ nav h1 {
         position: absolute;
         top: 190px;
     }
+    .links {
+        border: none;
+    }
     .project-links li {
         background-color: #00001E;
         color: #dfe6e9;
     }
     .project-container {
         position: absolute;
+        border: none; 
+        background: none;
         top: 190px;
         width: 100%;
     }
@@ -456,6 +472,7 @@ nav h1 {
         background-image: url("https://i.imgur.com/dRgRaR1.png");
         background-size: cover;
         display: none;
+        border: none;
     }
     .js-description {
         height: 126px;
