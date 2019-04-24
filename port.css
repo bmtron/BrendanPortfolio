@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 a {
+    color: #dfe6e9;
     text-decoration: none;
 }
 a:visited {
-    color: #d63031;
+    color: #dfe6e9;
 }
 html, body {
     height: 100%;
@@ -16,10 +17,10 @@ body {
     background-color: #cad6db;
 }
 nav {
-    
+    background-color: #00001E;
+    color: #dfe6e9;
     display: flex;
     width: 100%;
-    background: none;
     align-items: center;
 }
 nav h1 {
@@ -31,6 +32,7 @@ nav h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
+    color: #00000F;
 }
 .bio h2 {
     margin: 0;
@@ -38,6 +40,7 @@ nav h1 {
     top: 123px;
 }
 .project-links li{
+
     text-align: center;
     border: 2px solid #636e72;
     padding: 5px;
@@ -82,7 +85,6 @@ nav h1 {
 }
 .one, .two, .three, .four {
     margin-top: 0;
-    
 }
 .footer {
     width: 100%;
@@ -107,6 +109,10 @@ nav h1 {
         margin-left: 10px;
         margin-right: 10px;
         text-decoration: none;
+        color: #00000F;
+    }
+    .links a:visited {
+        color: #00000F;
     }
     .languages {
         width: 65%;
@@ -123,14 +129,13 @@ nav h1 {
         width: 20%;
         float: left;
         clear: none;
+        border-right: 4px solid #636e72;
     }
     nav {
         height: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        -webkit-box-shadow: 5px 0 5px -1px #9ca7ac;
-          box-shadow: 5px 0 5px -1px #9ca7ac;
     }
     nav h1 {
         position: absolute;
@@ -140,7 +145,7 @@ nav h1 {
     }
     li {
         list-style-type: none;
-    } 
+    }
     .nav-links {
         display: flex;
         position: absolute;
@@ -157,8 +162,11 @@ nav h1 {
         padding: 0;
     }
     .project-links li {
+        background-color:#444c4e;
+        color: #dfe6e9;
+        border: 2px solid #cad6db;
         font-size: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .project-links li:hover {
         cursor: pointer;
@@ -262,10 +270,10 @@ nav h1 {
         height: 10%;
     }
     nav {
+        background-color: #00001E;
         position: fixed;
         top: 0;
-        background: none;
-        border: none;
+        border-bottom: 4px solid #636e72;
     }
     .bio {
         width: 100%;
@@ -278,8 +286,11 @@ nav h1 {
     }
     .bio p {
         text-align: left;
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .large {
      display: none;
@@ -296,6 +307,8 @@ nav h1 {
         
     }
     .small li {
+        background-color: #00001E;
+        color: #dfe6e9;
         list-style-type: none;
         margin: 5px;
         font-size: 16px;
@@ -361,7 +374,7 @@ nav h1 {
 }
 @media screen and (max-width: 570px) {
     h1 {
-        font-size: 5.8vw;
+        font-size: 20px;
     }
     body {
         margin: 0;
@@ -371,17 +384,21 @@ nav h1 {
         position: fixed;
         top: 0;
         height: 10%;
+        
     }
     nav {
         position: fixed;
         top: 0;
-        background: none;
-        border: none;
+        border-bottom: 4px solid #636e72;
     }
     .bio {
         width: 100%;
         position: absolute;
         top: 190px;
+    }
+    .project-links li {
+        background-color: #00001E;
+        color: #dfe6e9;
     }
     .project-container {
         position: absolute;
@@ -394,8 +411,11 @@ nav h1 {
     }
     .bio p {
         text-align: left;
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .large {
      display: none;
