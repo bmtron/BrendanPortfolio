@@ -63,24 +63,16 @@ nav h1 {
 .html-logo {
     width: 20px;
     height: 20px;
-    background: url("http://www.stickpng.com/assets/images/5847f5c3cef1014c0b5e489d.png");
-    background-size: cover;
 }
 .css-logo {
-    background: url("https://sitejerk.com/images/background-attachment-3.png");
-    background-size: cover;
     width: 20px;
     height: 20px;
 }
 .js-logo {
-    background: url("https://cdn.freebiesupply.com/logos/large/2x/javascript-logo-png-transparent.png");
-    background-size: cover;
     width: 20px;
     height: 20px;
 }
 .jq-logo {
-    background: url("http://pluspng.com/img-png/jquery-logo-png--512.png");
-    background-size: cover;
     width: 20px;
     height: 20px;
 }
@@ -127,8 +119,6 @@ nav h1 {
     background-color: #dfe6e9;
     border-radius: 3px;
 }
-
-
 @media screen and (min-width: 976px) {
     header {
         height: 100%;
@@ -225,6 +215,10 @@ nav h1 {
         background: url("https://i.imgur.com/dRgRaR1.png")no-repeat center center;
         background-size: cover;
     }
+    .quiz-img {
+        height: 100%;
+        width: 100%;
+    }
     .description-one {
         display: none;
     }
@@ -317,9 +311,11 @@ nav h1 {
         cursor: pointer;
     }
     .project-container {
-        position: relative;
-        top: 100px;
+        position: absolute;
+        top: 190px;
         width: 80%;
+        left: 0;
+        right: 0;
         margin-left: auto;
         margin-right: auto;
         background: none;
