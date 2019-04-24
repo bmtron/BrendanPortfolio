@@ -8,8 +8,8 @@
         <title>Brendan Meehan's Web Development Portfolio</title>
     </head>
     <body>
-        <header>
-            <nav>
+        <header role="banner">
+            <nav role="navigation">
                 <h1>Brendan Meehan</h1>
                 <ul class="nav-links">
                     <li><a href="https://github.com/bmtron" target="_blank">GitHub</a></li>
@@ -23,13 +23,13 @@
                 </ul>
             </nav>
         </header>
-        <section class="hero-container">
+        <section class="hero-container" role="article">
             <ul class="project-links small">
                 <li class="me js-p-link">About Me</li>
                 <li class="quiz js-p-link">Monty Python Quiz App</li>
                 <li class="upcoming-one js-p-link">Coming Soon!</li>
             </ul>
-            <section class="bio">
+            <section class="bio" role="article">
                 <h2>Hello, my name is Brendan, and I am a full-stack web developer with a flair for functionality.
                 </h2>
                 <p>I am currently a student at Thinkful's Full Stack web development program. Ever since I built my first computer, I have had a growing 
@@ -39,7 +39,7 @@
                     a multitude of well structured, reusable functions and crafting user friendly, accessible UI, I have taken my passion and put it to use,
                     solving problems one web page at a time.</p>
             </section>
-            <section class="project-container">
+            <section class="project-container" role="article">
                 <section class="project one js-project"></section>
                 <section class="description-one js-description">
                     <section class="languages">
@@ -61,7 +61,6 @@
                 <section class="project three"><h2>Project 3</h2></section>
                 <section class="project four"><h2>Project 4</h2></section>
             </section>
-            <footer class="footer"><p>Footer</p></footer>
         </section>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="port.js"></script>
