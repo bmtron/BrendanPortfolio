@@ -65,7 +65,6 @@ function checkForUpcoming(input) {
         $('.js-description').hide();
         $('.description-two').fadeIn();
         $('.two').fadeIn();
-        console.log('worked');
     }
     else {
         jQuery.noop();
