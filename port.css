@@ -14,11 +14,11 @@ html, body {
     margin: 0;
 }
 body {
-    background-color: #cad6db;
+    background-color: #fcfcf6;
 }
 nav {
     background-color: rgb(16, 16, 58);
-    color: #dfe6e9;
+    color: white;
     display: flex;
     width: 100%;
     align-items: center;
@@ -119,7 +119,7 @@ nav h1 {
     background-color: #dfe6e9;
     border-radius: 3px;
 }
-@media screen and (min-width: 976px) {
+@media screen and (min-width: 930px) {
     header {
         height: 100%;
         width: 20%;
@@ -159,7 +159,7 @@ nav h1 {
     }
     .project-links li {
         background-color:#444c4e;
-        color: #dfe6e9;
+        color: white;
         border: 2px solid #cad6db;
         font-size: 20px;
         margin-bottom: 20px;
@@ -254,7 +254,142 @@ nav h1 {
         justify-content: center;
     }
 }
-@media screen and (max-width: 975px) and (min-width: 571px) {
+@media screen and (max-width: 929px) and (min-width: 801px) {
+    header {
+        height: 100%;
+        width: 25%;
+        float: left;
+        clear: none;
+        border-right: 4px solid #636e72;
+    }
+    nav {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav h1 {
+        position: absolute;
+        
+        top: 50px;
+        margin-left: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    .nav-links {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        top: 90px;
+        padding: 0;
+    }
+    .nav-links li {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .project-links {
+        flex-direction: column;
+        padding: 0;
+    }
+    .project-links li {
+        background-color:#444c4e;
+        color: white;
+        border: 2px solid #cad6db;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .project-links li:hover {
+        cursor: pointer;
+    }
+    .quiz-app:hover {
+        cursor: pointer;
+    }
+  
+    .small {
+        display: none;
+    }
+    .large {
+        display: block;
+    }
+   .footer {
+       display: none;
+   }
+    .bio {
+        margin-top: 0;
+    }
+    .project-container {
+        display: none;
+        width: 750px;
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 75%;
+        margin: 0;
+        float: right;
+        clear: none;
+    }
+    .bio p {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .project {
+        height: 500px;
+        width: 100%;
+        display: none;
+    }
+    .one {
+        background: url("https://i.imgur.com/dRgRaR1.png")no-repeat center center;
+        background-size: cover;
+    }
+    .quiz-img {
+        height: 100%;
+        width: 100%;
+    }
+    .description-one {
+        display: none;
+    }
+    .description-one p {
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .description-two {
+        display: none;
+    }
+    .description-two p {
+        text-align: center;
+    }
+    .links {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px; 
+        margin-bottom: 10px;
+    }
+    .links a {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .languages {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 601px) {
     body {
         margin: 0;
         height: 100%;
@@ -374,11 +509,14 @@ nav h1 {
         list-style-type: none;
         margin-left: 10px;
     }
+    .project-links li {
+        color: white;
+    }
     .footer {
         display: none;
     }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 20px;
     }
@@ -407,7 +545,7 @@ nav h1 {
     }
     .project-links li {
         background-color: rgb(16, 16, 58);
-        color: #dfe6e9;
+        color: white;
     }
     .project-container {
         position: absolute;
