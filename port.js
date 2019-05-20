@@ -23,15 +23,16 @@ function handleBioClick() {
         }
     });
 }
-function handleUpcomingClick() {
+
+function handleLeftoversClick() {
     $('.project-links').on('click', '.js-p-link', event => {
+        console.log('click');
         if ($('.two').is(":visible")){
             jQuery.noop();
         }
         else {
         let currentSelection = $(event.currentTarget);
         checkForUpcoming(currentSelection);
-        
         }
     });
 }
@@ -58,7 +59,7 @@ function checkForQuiz(input) {
     }
 }
 function checkForUpcoming(input) {
-    if (input.hasClass('upcoming-one')) {
+    if (input.hasClass('leftovers')) {
         $('.bio').hide();
         $('.project-container').fadeIn();
         $('.js-project').hide();
@@ -73,5 +74,5 @@ function checkForUpcoming(input) {
 
 $(handleBioClick);
 $(handleQuizClick);
-$(handleUpcomingClick);
+$(handleLeftoversClick);
 

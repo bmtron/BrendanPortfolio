@@ -40,7 +40,6 @@ nav h1 {
     top: 123px;
 }
 .project-links li{
-
     text-align: center;
     border: 2px solid #636e72;
     padding: 5px;
@@ -51,7 +50,6 @@ nav h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    border-bottom: 2px solid rgb(5, 5, 32);
 }
 
 .project h2 {
@@ -60,35 +58,12 @@ nav h1 {
     position: relative;
     top: 97px;
 }
-.html-logo {
-    width: 20px;
-    height: 20px;
-}
-.css-logo {
-    width: 20px;
-    height: 20px;
-}
-.js-logo {
-    width: 20px;
-    height: 20px;
-}
-.jq-logo {
-    width: 20px;
-    height: 20px;
+.html-logo, .css-logo, .js-logo, .jq-logo, .ajax-logo {
+    width: 30px;
+    height: 30px;
 }
 .one, .two, .three, .four {
     margin-top: 0;
-}
-.footer {
-    width: 100%;
-    height: 50px;
-    margin: 0;
-    background-color: rgb(131, 129, 129); 
-}
-.footer p {
-    margin: 0;
-    text-align: center;
-    font-size: 120%;
 }
 .links {
     width: 100%;
@@ -115,7 +90,6 @@ nav h1 {
     justify-content: center;
 }
 .project-container {
-    border: 2px solid #00001E;
     background-color: #dfe6e9;
     border-radius: 3px;
 }
@@ -123,174 +97,43 @@ nav h1 {
     header {
         height: 100%;
         width: 20%;
+        position: fixed;
+        left: 0;
+        overflow-y: auto;
         float: left;
         clear: none;
         border-right: 4px solid #636e72;
     }
+    h1 {
+        margin-bottom: 2px;
+    }
     nav {
         height: 100%;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    nav h1 {
-        position: absolute;
-        
-        top: 50px;
-        margin-left: 0;
     }
     li {
         list-style-type: none;
     }
     .nav-links {
         display: flex;
-        position: absolute;
+       
         flex-direction: row;
-        top: 90px;
+        
         padding: 0;
     }
     .nav-links li {
         margin-right: 10px;
         margin-left: 10px;
-    }
-    .project-links {
-        flex-direction: column;
-        padding: 0;
-    }
-    .project-links li {
-        background-color:#444c4e;
-        color: white;
-        border: 2px solid #cad6db;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .project-links li:hover {
-        cursor: pointer;
-    }
-    .quiz-app:hover {
-        cursor: pointer;
-    }
-  
-    .small {
-        display: none;
-    }
-    .large {
-        display: block;
-    }
-   .footer {
-       display: none;
-   }
-    .bio {
-        margin-top: 0;
-    }
-    .project-container {
-        display: none;
-        width: 750px;
-    }
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 80%;
-        margin: 0;
-        float: right;
-        clear: none;
-    }
-    .bio p {
-        text-align: left;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        font-size: 20px;
-        line-height: 32px;
     }
     .project {
-        height: 500px;
-        width: 100%;
-        display: none;
-    }
-    .one {
-        background: url("https://i.imgur.com/dRgRaR1.png")no-repeat center center;
-        background-size: cover;
-    }
-    .quiz-img {
-        height: 100%;
-        width: 100%;
-    }
-    .description-one {
-        display: none;
-    }
-    .description-one p {
         text-align: center;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .description-two {
-        display: none;
-    }
-    .description-two p {
-        text-align: center;
-    }
-    .links {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px; 
-        margin-bottom: 10px;
-    }
-    .links a {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-decoration: none;
-    }
-    .languages {
-        width: 100%;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
-}
-@media screen and (max-width: 929px) and (min-width: 801px) {
-    header {
-        height: 100%;
-        width: 25%;
-        float: left;
-        clear: none;
-        border-right: 4px solid #636e72;
-    }
-    nav {
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    nav h1 {
-        position: absolute;
-        
-        top: 50px;
-        margin-left: 0;
-    }
-    li {
-        list-style-type: none;
-    }
-    .nav-links {
-        display: flex;
-        position: absolute;
-        flex-direction: row;
-        top: 90px;
-        padding: 0;
-    }
-    .nav-links li {
-        margin-right: 10px;
-        margin-left: 10px;
     }
     .project-links {
         flex-direction: column;
         padding: 0;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .project-links li {
         background-color:#444c4e;
@@ -320,15 +163,16 @@ nav h1 {
     }
     .project-container {
         display: none;
-        width: 750px;
-    }
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
         width: 75%;
+        background-color: #fcfcf6;
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 80%;
         margin: 0;
         float: right;
         clear: none;
@@ -342,17 +186,15 @@ nav h1 {
         line-height: 32px;
     }
     .project {
-        height: 500px;
         width: 100%;
         display: none;
+        background-color: #fcfcf6;
     }
-    .one {
-        background: url("https://i.imgur.com/dRgRaR1.png")no-repeat center center;
-        background-size: cover;
-    }
-    .quiz-img {
-        height: 100%;
-        width: 100%;
+    
+    .quiz-img, .leftovers-img {
+        height: 75%;
+        width: 75%;
+        border-radius: 6px;
     }
     .description-one {
         display: none;
@@ -361,12 +203,14 @@ nav h1 {
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
+        font-size: 20px;
     }
     .description-two {
         display: none;
     }
     .description-two p {
         text-align: center;
+        font-size: 20px;
     }
     .links {
         width: 80%;
@@ -376,6 +220,7 @@ nav h1 {
         justify-content: center;
         margin-top: 10px; 
         margin-bottom: 10px;
+        font-size: 22px;
     }
     .links a {
         margin-left: 10px;
@@ -389,7 +234,8 @@ nav h1 {
         justify-content: center;
     }
 }
-@media screen and (max-width: 800px) and (min-width: 601px) {
+
+@media screen and (max-width: 929px) and (min-width: 601px) {
     body {
         margin: 0;
         height: 100%;
@@ -401,6 +247,7 @@ nav h1 {
         position: fixed;
         top: 0;
         height: 10%;
+        z-index: 5;
     }
     nav {
         position: fixed;
@@ -412,7 +259,6 @@ nav h1 {
         position: absolute;
         top: 190px;
     }
-   
     .bio p {
         text-align: left;
         font-size: 16px;
@@ -423,6 +269,11 @@ nav h1 {
     }
     .large {
      display: none;
+    }
+    .quiz-img, .leftovers-img {
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
     }
     .small {
         position: absolute;
@@ -464,7 +315,6 @@ nav h1 {
     }
     .project {
         width: 100%;
-        border: 2px solid #00001E;
     }
     .links {
         border: none;
@@ -528,12 +378,13 @@ nav h1 {
         position: fixed;
         top: 0;
         height: 10%;
-        
+        z-index: 5;
     }
     nav {
         position: fixed;
         top: 0;
         border-bottom: 4px solid #636e72;
+        z-index: 5;
     }
     .bio {
         width: 100%;
@@ -542,6 +393,14 @@ nav h1 {
     }
     .links {
         border: none;
+    }
+    .js-p-link:hover {
+        cursor: pointer;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
     }
     .project-links li {
         background-color: rgb(16, 16, 58);
