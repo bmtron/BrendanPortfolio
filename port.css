@@ -46,7 +46,7 @@ nav h1 {
     border-radius: 4px;
 }
 .project {
-    background-color: rgb(224, 224, 224);
+    background-color: #fcfcf6;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -93,7 +93,7 @@ nav h1 {
     background-color: #dfe6e9;
     border-radius: 3px;
 }
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 1000px) {
     header {
         height: 100%;
         width: 20%;
@@ -235,7 +235,7 @@ nav h1 {
     }
 }
 
-@media screen and (max-width: 929px) and (min-width: 601px) {
+@media screen and (max-width: 999px) and (min-width: 601px) {
     body {
         margin: 0;
         height: 100%;
@@ -271,8 +271,8 @@ nav h1 {
      display: none;
     }
     .quiz-img, .leftovers-img {
-        height: 100%;
-        width: 100%;
+        height: 75%;
+        width: 75%;
         border-radius: 6px;
     }
     .small {
@@ -397,7 +397,7 @@ nav h1 {
     .js-p-link:hover {
         cursor: pointer;
     }
-    img {
+    .quiz-img, .leftovers-img {
         height: 100%;
         width: 100%;
         border-radius: 6px;
@@ -455,14 +455,12 @@ nav h1 {
         height: 90%;
     }
     .project {
-        width: 65%;
+        width: 80%;
     }
     .one, .two, .three, .four {
         height: 60vw;
         }
     .one {
-        background-image: url("https://i.imgur.com/dRgRaR1.png");
-        background-size: cover;
         display: none;
         border: none;
     }
